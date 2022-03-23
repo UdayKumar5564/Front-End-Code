@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <select id = "box"> 
+<option value = "india"> Delhi</option>
+<option value = "Assam"> Dispur</option>
+<option value = "Gujarat"> Gandhinagar</option>
+<option value = "Karnataka"> Bengaluru</option>
+<option value = "Kerala"> Thiruvananthapuram</option>
+<option value = "West Bengal"> Kolkata</option>
+
+
+
+    </select>
+    <button onclick="box1()"> Find Containt</button>
+
+    <script>
+function box1()
+{
+    var a = document.getElementById("box").value;
+    switch(a)
+    {
+        case "india":
+            alert("The Capital of India");
+            break;
+            case "Assam":
+            alert("The State is Assam");
+            break;
+            case "Gujarat":
+            alert("The State is Gujarat");
+            break;
+            case "Karnataka":
+            alert("The State is Karnataka");
+            break;
+            case "Kerala":
+            alert("The State is Kerala");
+            break;
+            case "West Bengal":
+            alert("The State is West-Bengal");
+            break;
+
+
+    } 
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    
+    #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    .logo {
+        height: 100px;
+        width: 200px;
+        padding-left: 8ch;
+      }
+      h1{
+          text-align: center;
+      }
+      .name{
+          color: #232b2b;
+          text-align: center;
+      }
+      .img{
+          border-radius: 2ch;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          
+      }
+      @media only screen and (min-width: 421px) and (max-width: 780px)
+      {
+        .img{
+          border-radius: 15ch;
+          /* padding-left: 15ch; */
+          
+
+        }
+        #container{
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+
+        }
+        .name{
+         margin-right: 15%;
+          color: #4e3644;
+          text-shadow: 2px 2px 5px #68434b;
+        }
+        .logo{
+          padding-right: 10%;
+        }
+        }
+        @media only screen and (min-width: 263px) and (max-width: 625px)
+        {
+          .img{
+          border-radius: 30%;
+          /* padding-left: 15ch; */
+          
+
+        }
+        #container{
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: auto;
+
+        }
+        .name{
+         margin-right: 15%;
+          color: #4e3644;
+          text-shadow: 2px 2px 5px #68434b;
+        }
+        .logo{
+          padding-right: 15%;
+        }
+        }
+</style>
+<h1>Strategic investors</h1>
+</head>
+<body>
+<div id="container">
+
+</div>
+</body>
+
+</html>
+    <script>
+        
+  var investors = [
+    {
+      id: 1,
+      name: "Ankush Sachdeva",
+      image:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg",
+      role: "Co-Founder & CEO",
+    //   company:"Paytm"
+    },
+    {
+      id: 2,
+      name: "Bhanu Pratap Singh",
+      image:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png",
+      role: "Founder",
+    //   company:"CRED"
+    },
+    {
+      id: 3,
+      name: "Amrish Rau",
+      image:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png",
+      role: "Co-founder",
+    //   company:"Pine Labs"
+    },
+    {
+      id: 4,
+      name: "Sampad Swain",
+      image:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg",
+      companyLogo:
+        "https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png",
+      role: "Co-founder ",
+    //   company:"Instamojo"
+    },
+];
+
+
+
+investors.map(function (elem) {
+    var box = document.createElement("div");
+
+    var img = document.createElement("img");
+    img.src = elem.image;
+    img.setAttribute("class","img")
+
+    var roll = document.createElement("h3");
+    roll.textContent = elem.role;
+    roll.setAttribute("class","name")
+
+    var companyLogo = document.createElement("img");
+    companyLogo.src = elem.companyLogo;
+    companyLogo.setAttribute("class", "logo");
+
+    // var companyName =document.createElement("h2");
+    // companyName.textContent=elem.company;
+   
+    
+
+    box.append(img, roll, companyLogo, companyName);
+
+    document.querySelector("#container").append(box);
+  });
+
+
+    </script>

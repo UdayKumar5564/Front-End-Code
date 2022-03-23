@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-row: auto;
+        }
+       .img:hover{
+        border-radius: 3ch;
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+       -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       }
+       
+
+        .name1{
+            color: #235bb7;
+            font-family: "Georgia, serif";
+        }
+        .price1{
+        color: #008140;
+        }
+        .strikedOffPrice1{
+            color: #371601;
+            font-family: "Lucida Handwriting", cursive;
+        }
+        
+        #class{
+            margin-left: 2ch;
+            color: #371601;
+        }
+        #class1{
+            margin-left: 38ch;
+            color: #371601;
+        }
+        #class2{
+            margin-left: 36ch;
+            color: #371601;
+        }
+        #class3{
+            margin-left: 36ch;
+            color: #371601;
+            
+        }
+        button:hover{
+            color: #371601;
+            
+            background-color: aliceblue;
+            border-radius: 30ch;
+         
+        }
+        a{
+            color: #371601;
+            font-size: large;
+        }
+        .img{
+            height: 250px;
+            width: 80%;
+        }
+        @media only screen and (min-width: 625px) and (max-width: 705px)
+{
+    .img{
+        border-radius: 10ch;
+    }
+    #container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #container>div{
+        padding: 20px;
+
+    }
+    .h3{
+        text-align: center;
+    }
+    .h4{
+        text-align: center;
+    }
+    /* #class{
+        text-align: center;
+        margin: auto;
+        padding: 2%;
+    } */
+}
+    </style>
+</head>
+
+<body>
+    <div id ="container"></div>
+
+    <button id ="class"><a href="https://www.amazon.in/Envias-Womens-Sling-Bag-Blue/dp/B08GSPJH7H/ref=sr_1_5?crid=30DRG0RR1FF27&keywords=blue+ladies+bag&qid=1647697867&sprefix=blue+ladies+bag%2Caps%2C282&sr=8-5">Buy</button></a>
+        
+    <button id ="class1"><a href="https://www.amazon.in/Urbano-Fashion-Jeans-epsrustsprcrs-lblue-32_Light-Blue_32/dp/B08D9T6K5M/ref=sr_1_12?crid=12IRNMS6HAE89&keywords=blue+jeans&qid=1647698119&sprefix=blue+jeana%2Caps%2C379&sr=8-12">Buy</button></a>
+    
+    <button id ="class2"><a href="https://www.amazon.in/HP-Micro-Edge-Anti-Glare-Display-Graphics/dp/B09MH9M5CV/ref=sr_1_1_sspa?keywords=laptop&qid=1647699046&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyNlYwUU5FOEFXMkFIJmVuY3J5cHRlZElkPUEwNjk3OTA0MzZFOTFLVkdHOTNQWiZlbmNyeXB0ZWRBZElkPUEwODc2MTQxMVJFUVhLMTlIRkRXSSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">Buy</button></a>
+
+    <button id ="class3"><a href="https://www.amazon.in/Centrino-Mens-3323-Sneakers-7-3323-02/dp/B07QNWSRBL/ref=sr_1_2_sspa?keywords=sneakers+for+men&qid=1647698469&smid=AT95IG9ONZD7S&sprefix=sneke%2Caps%2C424&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzVzBYUUw3MkhITjJWJmVuY3J5cHRlZElkPUEwNTc1NzE0MVE4QldDT0VMVUVZSCZlbmNyeXB0ZWRBZElkPUEwNjE2ODIxMkc2WFJISlpRNTJQRyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">Buy</button></a>
+
+</body>
+</html>
+
+<script>
+    // <button onclick="myFunction()">Click me</button>
+    var data = [
+    {
+        imgUrl:"https://m.media-amazon.com/images/I/71Rw9zTatDL._UX625_.jpg",
+        name:"Envias Leatherette Side Sling",
+        price:"₹307.00 ",
+        strikedOffPrice:"(₹792.00 (72% off))",
+        
+        
+        // link:"https://www.flipkart.com/https://www.flipkart.com/search?q=snekers+shoes&sid=osp%2Ccil%2Ce1f&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&as-pos=1&as-type=RECENT&suggestionId=snekers+shoes%7CCasual+Shoes&requestId=c4f1b6c6-8687-4c94-be30-eab85167eed2&as-backfill=on?q=formal%20watch%20men&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+    },
+    {
+        imgUrl:"https://m.media-amazon.com/images/I/71m0W58-zQL._UX679_.jpg",
+        name:"Urbano Fashion Men's Slim Fit Jeans",
+        price:"₹599.00 ",
+        strikedOffPrice:"(2,999 (80% off))",
+        // link:"https://www.flipkart.com/search?q=formal%20watch%20men&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+    },
+    {
+        imgUrl:"https://m.media-amazon.com/images/I/71XrhZlgYML._SX569_.jpg",
+        name:"Acer Aspire 3 Intel Core i3 11th Generation",
+        price:"₹359.00",
+        strikedOffPrice:"(₹1,840.00 (84%))",
+        // link:"https://www.flipkart.com/search?q=blue%20pant%20jens&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+    },
+    {
+        imgUrl:"https://m.media-amazon.com/images/I/71HUIiZ8ZdL._UY625_.jpg",
+        name:"Centrino Men 3323-21",
+        price:"₹569.00",
+        strikedOffPrice:"(₹1,630.00 (74%))",
+    }
+];
+
+data.map(function (elem)
+{
+var box = document.createElement("div");
+
+var img = document.createElement("img")
+img.src= elem.imgUrl;
+img.setAttribute("class","img")
+
+var name1 = document.createElement("h4");
+name1.textContent= elem.name;
+name1.setAttribute("class","name1")
+
+var price1 = document.createElement("h3");
+price1.textContent= elem.price;
+price1.setAttribute("class","price1")
+
+var strikedOffPrice1 = document.createElement("h3");
+strikedOffPrice1.textContent= elem.strikedOffPrice;
+strikedOffPrice1.setAttribute("class","strikedOffPrice1")
+
+
+
+box.append(img, name1, price1, strikedOffPrice1);
+document.querySelector("#container").append(box);
+
+
+});
+
+
+
+</script>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section{
+            height: 100px;
+            width: 90%;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: 
+#e2aadf;
+            display: flex;
+            color: brown;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20%;
+            margin-right: 40px;
+        }
+
+        .section > div > div{
+            margin: 5px;
+            width: 100px;
+        }
+
+        #drop{
+            height: 20px;
+            width: 65px;
+        }
+
+        select{
+            border: 0;
+            border-radius: 5px;
+            color: aliceblue;
+            background-color: rgb(56, 54, 54);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>MEGAWIDTH</h1>
+        <div>
+            <DIV>Home</DIV>
+            <DIV>About</DIV>
+            <DIV>Blog</DIV>
+            <select name="page" id="drop">
+                <option value="">Page </option>
+                <option value="page-1">page-1</option>
+                <option value="page-2">page-2</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>

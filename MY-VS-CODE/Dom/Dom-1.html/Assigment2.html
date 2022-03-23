@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+
+<style>
+	#dName{
+	 color: rgb(235, 143, 23);	
+	}
+	#dGender{
+	 color: rgb(231, 163, 73);	
+	}
+	#dEmail{
+	 color: rgb(141, 120, 94);	
+	}
+	#dMobile{
+	 color: rgb(82, 77, 72);	
+	}
+</style>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<input type="text" name="name" id="name">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" name="email" id="email">
+	<input type="text" name="mobile" id="mobile">
+	<hr>
+	<h1 id="dName">NAME</h1>
+	<h2 id="dGender">GENDER</h2>
+	<h3 id="dEmail">EMAIL</h3>
+	<h4 id="dMobile">MOBILE</h4>
+	<hr>
+	<button onclick="showName()">NAME</button>
+	<button onclick="showGender()">GENDER</button>
+	<button onclick="showEmail()">EMAIL</button>
+	<button onclick="showMobile()">MOBILE</button>
+	<button onclick="resetForm()">RESET FORM</button>
+	<button onclick="resetDisplay()">RESET DISPLAY</button>
+
+	
+	<script type="text/javascript">
+		function showName() {
+			 var a = document.getElementById("name").value;
+			 console.log(a);
+		
+			document.getElementById("dName").innerText= a;
+	
+		}
+
+		function showGender() {
+			var a = document.getElementById("gender").value;
+			 console.log(a);
+		
+			document.getElementById("dGender").innerText= a;
+		}
+
+		function showEmail() {
+			var a = document.getElementById("email").value;
+			 console.log(a);
+		
+			document.getElementById("dEmail").innerText= a;
+		}
+
+		function showMobile() {
+			var a = document.getElementById("mobile").value;
+			 console.log(a);
+		
+			document.getElementById("dMobile").innerText= a;
+		}
+
+		function resetForm() {
+			document.getElementById("dName").innerText= "Name";
+			document.getElementById("dGender").innerText= "Gender";
+			document.getElementById("dEmail").innerText= "Email";
+			document.getElementById("dMobile").innerText= "Mobile";
+		}
+
+		function resetDisplay() {
+			document.getElementById("dName").innerText= "";
+			document.getElementById("dGender").innerText= "";
+			document.getElementById("dEmail").innerText= "";
+			document.getElementById("dMobile").innerText= "";
+		}
+	</script>
+</body>
+</html>

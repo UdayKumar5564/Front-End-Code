@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="Name" placeholder="Enter Name"/>
+    <input type="text" id="Age"  placeholder="Enter Age"/>
+   
+        <select  id="gender">
+            <option value="">--</option>
+            <option value="male">M</option>
+            <option value="female">F</option>
+        </select>
+
+     
+    <input type="text" id="Email"  placeholder="Enter Email"/>
+    <input type="text" id="mobileNo"  placeholder="Enter mobileNo" />
+    <hr>
+    <h4 id="DName"></h4>
+    <h4 id="Demail"></h4>
+    <h4 id="DNo"></h4>
+    <h4 id="Dage"></h4>
+    </hr>
+<Style>
+
+#DName{
+ color: cornflowerblue;
+}
+#Demail{
+ color: cornflowerblue;
+}
+#DNo{
+ color: cornflowerblue;
+}
+#Dage{
+ color: cornflowerblue;
+}
+</Style>
+   
+
+    
+    <button onclick="Submit()">Submit</button>
+    <script>
+        function Submit()
+        {
+           var a =  document.getElementById("Name").value;
+            console.log(a);
+ document.getElementById("DName").innerText= a;
+ var a =  document.getElementById("Age").value;
+            console.log(a);
+ document.getElementById("Demail").innerText= a;
+ var a =  document.getElementById("Email").value;
+            console.log(a);
+ document.getElementById("DNo").innerText= a;
+ var a =  document.getElementById("mobileNo").value;
+            console.log(a);
+ document.getElementById("Dage").innerText= a;
+        }
+    </script>
+</body>
+</html>
